@@ -18,7 +18,3 @@ class Test_bypass(unittest.TestCase):
 		self.assertEqual( bypass.eval(), 0 )
 		bypass = Bypass( bypass = 10, weigth = 12 )
 		self.assertEqual( bypass.eval(), 120 )
-
-
-if __name__ == '__main__':
-    unittest.main()
