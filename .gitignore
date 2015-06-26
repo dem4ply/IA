@@ -172,3 +172,6 @@ xcuserdata
 # compilados de python
 *.pyc
 __pycache__
+
+.coverage
+.html_coverage
