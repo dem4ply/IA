@@ -13,7 +13,11 @@ class Test_synapse(unittest.TestCase):
 		self.assertEqual( str( synapse ), "Weigth: 12" )
 		self.assertEqual( repr( synapse ), "W: 12" )
 
-	def test_is_synapse_in( self )
+	def test_eval( self ):
+		synapse = Synapse( neuron = 10, weigth = 4 )
+		self.assertEqual( synapse.eval(), 40 )
 
-if __name__ == '__main__':
-    unittest.main()
+	def test_is_synapse_in( self ):
+		synapse = Synapse( neuron = 10, weigth = 4 )
+		self.assertEqual( synapse.is_in(), True )
+		self.assertEqual( synapse.eval(), 40 )
